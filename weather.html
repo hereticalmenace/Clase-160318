@@ -47,7 +47,7 @@
 </div>
 <script>
 var request = new XMLHttpRequest();
-request.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q=524901&units=metric&appid=94fae135ad6ed94b87b39340a87a77dc', true);
+request.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=Moscow&units=metric&appid=94fae135ad6ed94b87b39340a87a77dc', true);
 request.onload = function () {
   var data = JSON.parse(this.response);
   var lat = data.coord.lat;
